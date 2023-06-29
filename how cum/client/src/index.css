@@ -1,0 +1,49 @@
+body {
+  margin: 0 ;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 1000px;
+  border: 2px solid black;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.tete{background-color: #783F04;
+ display: flex;
+justify-content: center;
+
+}
+.but1{margin-top:28px; margin-left: 70px;
+background-color: #085394;color: aliceblue;padding-top:15px;padding-left: 5px;padding-right: 5px;padding-bottom: 10px;
+text-decoration: none; box-shadow: 5px 5px 10px black;}
+.forme{display: flex;flex-direction: row;background-color: #FF9900;}
+.cardbody2{margin-left: 500px;}
+.carbody{margin-left: 100px;}
+.for{background-color: #FF9900;}
+.but3{background-color: #CF2A27;box-shadow: 5px 5px 10px black;}
+.bu2{text-decoration: none;background-color: #085394;color: aliceblue;margin-right: 20px;padding-left: 10px;padding-right: 10px;margin-bottom: 0px;box-shadow:5px 5px 10px black ;border:3px black;}
+.Pos{display: flex;flex-direction: row;align-items: center;border: 2px solid black;width: 800px;margin-left: 100px;background-color: aliceblue;
+margin-top: 10px;}
+.cardd{margin-left: 400px;}
+.imagee{width: 100px;height: 100px;}
+.formet{background-color: #FF9900;
+
+}
+
+.list{display: flex;text-decoration: none;flex-direction: column;font-size: 20px;}
+.l{list-style: none;font-size: 25px;}
+
+
+.About{border: 3px solid black;background-color: aliceblue ;margin-left: 400px;margin-bottom: 200px;padding:100px;margin-top: 40px;}
+
+
+
+
