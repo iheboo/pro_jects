@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <nav class="d-flex justify-content-between align-items-center col-12 mb-5">
+            <h1 class="text-center">{{user.first_name.title()}} {{user.last_name.title()}}!</h1>
+            <div class="d-flex col-4 justify-content-around">
+                <a href="/shows/new" class="btn btn-primary">+ Create</a>
+                <a href="/logout" class="btn btn-info">Logout</a>
+
+            </div>
+
+        </nav>
+        
+        <h3>All TV Shows:</h3>
+            <table class="table table-hover my-5">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Network</th>
+                        <th>Release Date</th>
+                        <th class="text-center">Actions</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for show in shows %}
+                        <tr>
+                            <td>{{show.title}}</td>
+                            <td>{{show.network}}</td>
+                            <td>{{show.date}}</td>
+                            <td class="d-flex justify-content-center">
+                                <a class="mx-2" href="/shows/{{show.id}}">show</a> 
+                                {% if show.user_id  == session.user_id %}
+                                |  <a class="mx-2" href="/shows/edit/{{show.id}}">edit</a> |
+                                <a class="mx-2" href="/destroy/show/{{show.id}}">delete</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        
+    </div>
+</body>
+</html>
